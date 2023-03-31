@@ -8,26 +8,33 @@
         <title>The Fuyopedia</title>
     </head>
     <body>
-        <div class="flex h-screen">
-            <!-- Sidebar goes here -->
-            <div id="sidebar" class="hidden bg-gray-100">
+        <div class="flex fixed">
+            <div id="sidebar" class="hidden bg-gray-100 h-screen">
                 <ul class="py-4">
-                    <li class="px-4 py-2 hover:bg-gray-200">Home</li>
-                    <li class="px-4 py-2 hover:bg-gray-200">Profile</li>
-                    <li class="px-4 py-2 hover:bg-gray-200">Memories</li>
-                    <li class="px-4 py-2 hover:bg-gray-200">Cultures</li>
-                    <li class="px-4 py-2 hover:bg-gray-200">Variant</li>
-                    <li class="px-4 py-2 hover:bg-gray-200">Suggestion</li>
+                    <li class="hover:bg-gray-200">
+                        <a href="./index.html"><div class="px-4 py-2">Homepage</div></a>
+                    </li>
+                    <li class="hover:bg-gray-200">
+                        <a href="./profile.html"><div class="px-4 py-2">Profile</div></a>
+                    </li>
+                    <li class="hover:bg-gray-200">
+                        <a href="./variant.html"><div class="px-4 py-2">Variant</div></a>
+                    </li>
+                    <li class="hover:bg-gray-200">
+                        <a href="./memories.html"><div class="px-4 py-2">Memories</div></a>
+                    </li>
+                    <li class="hover:bg-gray-200">
+                        <a href="./culture.html"><div class="px-4 py-2">Culture</div></a>
+                    </li>
+                    <li class="hover:bg-gray-200">
+                        <a href="./feedback.html"><div class="px-4 py-2">Feedback</div></a>
+                    </li>
                 </ul>
             </div>
 
             <!-- Main content goes here -->
-            <!-- <div class="h-screen w-screen bg-gray-200 flex justify-center items-center">
-                <div class="bg-white p-8 rounded-lg">
-                </div>
-            </div> -->
-            <div class="w-screen">
-                <div class="bg-gray-200 py-2 px-4 font-bold">
+            <div>
+                <div class="w-screen bg-gray-200 py-2 px-4 font-bold">
                     <button
                         id="toggleSidebar"
                         class="border bg-gray-300 text-gray-600 p-2 px-4 rounded-md hover:bg-gray-300"
@@ -36,14 +43,31 @@
                     </button>
                     The Fuyopedia
                 </div>
+            </div>
+        </div>
+
+        <div class="flex h-screen">
+            <!-- Sidebar goes here -->
+
+            <div class="w-screen mt-16">
                 <div class="p-4">
                     <div class="text-3xl font-bold">Welcome to The Fuyopedia</div>
                 </div>
                 <div class="p-4">
-                    <div class="text-xl font-bold">What is this page?</div>
-                    <p>site for all Fuyo Cloverfield related knowledge and information</p>
+                    <div class="text-xl font-bold">
+                        <img
+                            src="./assets/images/science-team.jpg"
+                            alt="science-team"
+                            class="w-8 h-8"
+                        />
+                        What is this page?
+                    </div>
+                    <p>The site for all Fuyo Cloverfield related knowledge and information, this is the homepage</p>
                 </div>
-                <div class="p-4">Page is under construction!</div>
+                <div class="p-4">
+                    <img src="./assets/images/maintenance.png" alt="maintenance" class="w-16 h-16" />
+                    Please be patient, some pages are still under construction
+                </div>
             </div>
         </div>
 
