@@ -40,7 +40,7 @@
                 return `${diffDays} days, ${diffHours} hours, ${diffMinutes} minutes, ${diffSeconds} seconds`;
             }
 
-            fetch('https://holodex.net/api/v2/live?channel_id=UC8zgKaS8LiyL28mdhRC2nBg&limit=1')
+            fetch('https://holodex.net/api/v2/live?channel_id=UC8zgKaS8LiyL28mdhRC2nBg&limit=1&status=live')
                 .then((res) => res.json())
                 .then((data) => {
                     if (data.length) {
