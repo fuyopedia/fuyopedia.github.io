@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "tailwindcss -i ./input.css -o ./global.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./global.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}

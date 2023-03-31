@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./global.css" />
+        <title>The Fuyopedia</title>
+    </head>
+    <body>
+        <div class="flex h-screen">
+            <!-- Sidebar goes here -->
+            <div id="sidebar" class="hidden bg-gray-100">
+                <ul class="py-4">
+                    <li class="px-4 py-2 hover:bg-gray-200">Home</li>
+                    <li class="px-4 py-2 hover:bg-gray-200">Profile</li>
+                    <li class="px-4 py-2 hover:bg-gray-200">Memories</li>
+                    <li class="px-4 py-2 hover:bg-gray-200">Cultures</li>
+                    <li class="px-4 py-2 hover:bg-gray-200">Variant</li>
+                    <li class="px-4 py-2 hover:bg-gray-200">Suggestion</li>
+                </ul>
+            </div>
+
+            <!-- Main content goes here -->
+            <!-- <div class="h-screen w-screen bg-gray-200 flex justify-center items-center">
+                <div class="bg-white p-8 rounded-lg">
+                </div>
+            </div> -->
+            <div class="w-screen">
+                <div class="bg-gray-200 py-2 px-4 font-bold">
+                    <button
+                        id="toggleSidebar"
+                        class="border bg-gray-300 text-gray-600 p-2 px-4 rounded-md hover:bg-gray-300"
+                    >
+                        =
+                    </button>
+                    The Fuyopedia
+                </div>
+                <div class="p-4">
+                    <div class="text-3xl font-bold">Welcome to The Fuyopedia</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-xl font-bold">What is this page?</div>
+                    <p>site for all Fuyo Cloverfield related knowledge and information</p>
+                </div>
+                <div class="p-4">Page is under construction!</div>
+            </div>
+        </div>
+
+        <script>
+            const button = document.querySelector('#toggleSidebar');
+            const sidebar = document.querySelector('#sidebar');
+            button.addEventListener('click', () => {
+                sidebar.classList.toggle('hidden');
+                button.innerText = sidebar.classList.contains('hidden') ? '=' : '<';
+            });
+        </script>
+    </body>
+</html>
