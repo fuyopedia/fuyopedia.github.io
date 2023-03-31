@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./global.css" />
+        <title>The Fuyopedia</title>
+    </head>
+    <body>
+        <div class="flex h-screen">
+            <div class="w-screen">
+                <div class="bg-gray-200 py-2 px-4 font-bold">Fuyoless Counter</div>
+                <div class="p-4">
+                    <div class="text-xl font-bold">What is this page?</div>
+                    <p>
+                        This is a formulated page to calculate how much you time has been passed
+                        since the last time we are away from our la cosa verde Fuyo Cloverfield
+                    </p>
+                </div>
+                <div class="p-4 font-bold">
+                    <div id="fuyoless">Calculating your time without Fuyo...</div>
+                    <div id="livestream" class="hidden">LIVE : <a class="text-red-500" href="#"></a></div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const fuyoless = document.querySelector('#fuyoless');
+            const livestream = document.querySelector('#livestream');
+            function calculateDiffs(time) {
+                const now = new Date();
+                const diffTime = Math.abs(now - time);
+                const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+                const diffHours = Math.floor((diffTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const diffMinutes = Math.floor((diffTime % (1000 * 60 * 60)) / (1000 * 60));
+                const diffSeconds = Math.floor((diffTime % (1000 * 60)) / 1000);
+                return `${diffDays} days, ${diffHours} hours, ${diffMinutes} minutes, ${diffSeconds} seconds`;
+            }
+
+            fetch('https://holodex.net/api/v2/live?channel_id=UC8zgKaS8LiyL28mdhRC2nBg&limit=1')
+                .then((res) => res.json())
+                .then((data) => {
+                    if (data.length) {
+                        const [{ id, title }] = data;
+                        const ytlink = `https://youtube.com/live/${id}`;
+
+                        fuyoless.innerText = 'Fuyo is LIVE! Fuyoless is no more!';
+                        const link = livestream.querySelector('a');
+                        link.href = ytlink;
+                        link.innerText = title;
+
+                        livestream.classList.toggle('hidden');
+                    } else {
+                        fetch(
+                            'https://holodex.net/api/v2/videos?channel_id=UC8zgKaS8LiyL28mdhRC2nBg&status=past&limit=1&type=stream'
+                        )
+                            .then((res) => res.json())
+                            .then((data) => {
+                                const [{ available_at, duration }] = data;
+                                const stream_start = new Date(available_at);
+                                const stream_end = new Date(
+                                    stream_start.getTime() + duration * 1000
+                                );
+                                setInterval(() => {
+                                    const result = calculateDiffs(stream_end);
+                                    fuyoless.innerText = 'We have been Fuyoless for : ' + result;
+                                }, 1000);
+                            });
+                    }
+                });
+        </script>
+    </body>
+</html>
