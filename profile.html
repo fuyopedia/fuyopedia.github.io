@@ -14,7 +14,7 @@
                     <li class="hover:bg-gray-200">
                         <a href="./index.html"><div class="px-4 py-2">Homepage</div></a>
                     </li>
-                    <li class="hover:bg-gray-200">
+                    <li class="bg-gray-300">
                         <a href="./profile.html"><div class="px-4 py-2">Profile</div></a>
                     </li>
                     <li class="hover:bg-gray-200">
@@ -22,12 +22,6 @@
                     </li>
                     <li class="hover:bg-gray-200">
                         <a href="./memories.html"><div class="px-4 py-2">Memories</div></a>
-                    </li>
-                    <li class="hover:bg-gray-200">
-                        <a href="./culture.html"><div class="px-4 py-2">Culture</div></a>
-                    </li>
-                    <li class="hover:bg-gray-200">
-                        <a href="./feedback.html"><div class="px-4 py-2">Feedback</div></a>
                     </li>
                 </ul>
             </div>
@@ -58,19 +52,20 @@
                         <img
                             src="./assets/images/science-team.jpg"
                             alt="science-team"
-                            class="w-8 h-8"
+                            class="w-8 h-8 inline"
                         />
                         What is this page?
                     </div>
                     <p>
-                        This section give you the very basic information on who is this "Fuyo"
-                        character
+                        This section give you the very basic information on who is this
+                        <span class="text-orange-600">Fuyo</span>
+                        character is
                     </p>
                 </div>
 
                 <div class="p-4">
                     <!-- BIO -->
-                    <table class="border-2 border-gray-500 border-solid float-right">
+                    <table class="border-2 border-gray-500 border-solid float-right mb-4">
                         <tr class="bg-green-600">
                             <th colspan="3" class="center text-white p-2">Fuyo Cloverfield</th>
                         </tr>
@@ -99,7 +94,7 @@
                         <tr>
                             <td>Height</td>
                             <td>:</td>
-                            <td>135 cm [4'5'']</td>
+                            <td>135 cm [4'5''] <br />(without the hat)</td>
                         </tr>
                         <tr>
                             <td>Languages</td>
@@ -166,205 +161,247 @@
                     </table>
 
                     <!-- INTRODUCTION -->
-                    <div class="text-xl font-bold mt-8">
+                    <div class="text-xl font-bold mt-8 mb-2">
                         <img
                             src="./assets/images/elitefuyo.png"
                             alt="elite-fuyo"
-                            class="w-20 h-24"
+                            class="w-20 h-24 inline"
                         />
-                        Introduction (ahem~)
+                        <span class="align-bottom">
+                            <button class="text-green-500" data-target="introduction">[-]</button>
+                            Introduction (ahem~)
+                        </span>
                     </div>
-                    <blockquote class="border-2 border-solid border-green-300 p-2 max-w-lg rounded">
+                    <div
+                        data-label="introduction"
+                        class="border-2 border-solid border-green-300 p-2 max-w-lg rounded bg-green-100"
+                    >
                         Heya~!<br /><br />
 
                         Idol EN's wish-n'-luck-granting magical leprechaun from another world! 🍀💰
                         Nice to meetcha~! 💚<br /><br />
 
                         Let's hangout and have tons of fun together!
-                    </blockquote>
+                    </div>
 
                     <!-- LINKS -->
-                    <div class="text-xl font-bold mt-8">
-                        <img src="./assets/images/kneel.png" alt="science-team" class="w-20 h-20" />
-                        Links
+                    <div class="text-xl font-bold mt-8 mb-2">
+                        <img
+                            src="./assets/images/kneel.png"
+                            alt="science-team"
+                            class="w-20 h-20 inline"
+                        />
+                        <span class="align-bottom">
+                            <button class="text-green-500" data-target="links">[-]</button>
+                            Links
+                        </span>
                     </div>
-                    <div class="font-bold mt-4">-- Social Media --</div>
-                    <ul>
-                        <li>
-                            <a href="https://youtube.com/@FuyoCloverfield" class="text-red-600">
-                                <img
-                                    src="./assets/images/yt.jpg"
-                                    alt="youtube"
-                                    class="w-4 h-4 inline"
-                                />
-                                Youtube
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/FuyoCloverfield" class="text-blue-500">
-                                <img
-                                    src="./assets/images/twitter.png"
-                                    alt="twitter"
-                                    class="w-4 h-4 inline"
-                                />
-                                Twitter
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitch.tv/fuyocloverfield" class="text-purple-500">
-                                <img
-                                    src="./assets/images/twitch.jpg"
-                                    alt="twitch"
-                                    class="w-4 h-4 inline"
-                                />
-                                Twitch
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://marshmallow-qa.com/fuyocloverfield"
-                                class="text-gray-500"
-                            >
-                                <img
-                                    src="./assets/images/maro.png"
-                                    alt="marshmallow"
-                                    class="w-4 h-4 inline"
-                                />
-                                Marshmallow
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="font-bold mt-4">-- Official --</div>
-                    <ul>
-                        <li>
-                            <a href="https://idol-company.com/fuyo" class="text-gray-700">
-                                <img
-                                    src="./assets/images/idolcorp.jpeg"
-                                    alt="idolcorp"
-                                    class="w-4 h-4 inline"
-                                />
-                                Fuyo Profile Page
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://discord.com/invite/idolcorp" class="text-blue-600">
-                                <img
-                                    src="./assets/images/discord.png"
-                                    alt="discord"
-                                    class="w-4 h-4 inline"
-                                />
-                                Discord [⭐idol - official server⭐]
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://reddit.com/r/idolcorp" class="text-orange-500">
-                                <img
-                                    src="./assets/images/reddit.png"
-                                    alt="reddit"
-                                    class="w-4 h-4 inline"
-                                />
-                                Reddit [/r/idolcorp]
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="font-bold mt-4">-- TIP --</div>
-                    <ul>
-                        <li>
-                            <a
-                                href="https://streamelements.com/fuyocloverfield/tip"
-                                class="text-gray-500"
-                            >
-                                <img
-                                    src="./assets/images/tip.jpg"
-                                    alt="streamelements"
-                                    class="w-4 h-4 inline"
-                                />
-                                Stream Elements
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="mt-4">This vtuber was kidnapped and brought to you by :</div>
-                    <ul>
-                        <li>
-                            <a href="https://idol-company.com" class="text-gray-700">
-                                <img
-                                    src="./assets/images/idolcorp.jpeg"
-                                    alt="idol-company"
-                                    class="w-4 h-4 inline"
-                                />
-                                The Idol Company
-                            </a>
-                        </li>
-                    </ul>
+                    <div
+                        data-label="links"
+                        class="border-2 border-solid border-gray-500 p-2 max-w-lg rounded bg-gray-100"
+                    >
+                        <div class="font-bold">-- Social Media --</div>
+                        <ul>
+                            <li>
+                                <a href="https://youtube.com/@FuyoCloverfield" class="text-red-600">
+                                    <img
+                                        src="./assets/images/yt.jpg"
+                                        alt="youtube"
+                                        class="w-4 h-4 inline"
+                                    />
+                                    Youtube
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/FuyoCloverfield" class="text-blue-500">
+                                    <img
+                                        src="./assets/images/twitter.png"
+                                        alt="twitter"
+                                        class="w-4 h-4 inline"
+                                    />
+                                    Twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitch.tv/fuyocloverfield" class="text-purple-500">
+                                    <img
+                                        src="./assets/images/twitch.jpg"
+                                        alt="twitch"
+                                        class="w-4 h-4 inline"
+                                    />
+                                    Twitch
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://marshmallow-qa.com/fuyocloverfield"
+                                    class="text-gray-500"
+                                >
+                                    <img
+                                        src="./assets/images/maro.png"
+                                        alt="marshmallow"
+                                        class="w-4 h-4 inline"
+                                    />
+                                    Marshmallow
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="font-bold mt-4">-- Official --</div>
+                        <ul>
+                            <li>
+                                <a href="https://idol-company.com/fuyo" class="text-gray-700">
+                                    <img
+                                        src="./assets/images/idolcorp.jpeg"
+                                        alt="idolcorp"
+                                        class="w-4 h-4 inline"
+                                    />
+                                    Fuyo Profile Page
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/@FuyoClips" class="text-red-500">
+                                    <img
+                                        src="./assets/images/yt.jpg"
+                                        alt="youtube"
+                                        class="w-4 h-4 inline"
+                                    />
+                                    Clip Channel [Fuyo Cloverfield Clip]
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://discord.com/invite/idolcorp" class="text-blue-600">
+                                    <img
+                                        src="./assets/images/discord.png"
+                                        alt="discord"
+                                        class="w-4 h-4 inline"
+                                    />
+                                    Discord [⭐idol - official server⭐]
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://reddit.com/r/idolcorp" class="text-orange-500">
+                                    <img
+                                        src="./assets/images/reddit.png"
+                                        alt="reddit"
+                                        class="w-4 h-4 inline"
+                                    />
+                                    Reddit [/r/idolcorp]
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="font-bold mt-4">-- TIP --</div>
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://streamelements.com/fuyocloverfield/tip"
+                                    class="text-gray-500"
+                                >
+                                    <img
+                                        src="./assets/images/tip.jpg"
+                                        alt="streamelements"
+                                        class="w-4 h-4 inline"
+                                    />
+                                    Stream Elements
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="mt-4">This vtuber was kidnapped and brought to you by :</div>
+                        <ul>
+                            <li>
+                                <a href="https://idol-company.com" class="text-gray-700">
+                                    <img
+                                        src="./assets/images/idolcorp.jpeg"
+                                        alt="idol-company"
+                                        class="w-4 h-4 inline"
+                                    />
+                                    The Idol Company
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
                     <!-- TAGS -->
-                    <div class="text-xl font-bold mt-8">
+                    <div class="text-xl font-bold mt-8 mb-2">
                         <img
                             src="./assets/images/flustered.png"
                             alt="flustered-fuyo"
-                            class="w-20 h-20"
+                            class="w-16 h-16 inline"
                         />
-                        Tags
+                        <span class="align-bottom">
+                            <button class="text-green-500" data-target="tags">[-]</button>
+                            Tags
+                        </span>
                     </div>
-                    <ul>
-                        <li>
-                            GENERAL:
-                            <a
-                                class="text-blue-500"
-                                href="https://twitter.com/search?q=%23FuyoCloverfield"
-                            >
-                                #FuyoCloverfield
-                            </a>
-                        </li>
-                        <li>
-                            LIVE:
-                            <a
-                                class="text-blue-500"
-                                href="https://twitter.com/search?q=%23FuyOnline"
-                            >
-                                #FuyOnline
-                            </a>
-                        </li>
-                        <li>
-                            CLIPS:
-                            <a
-                                class="text-blue-500"
-                                href="https://twitter.com/search?q=%23FuyoCloverClips"
-                            >
-                                #FuyoCloverClips
-                            </a>
-                        </li>
-                        <li>
-                            ART:
-                            <a
-                                class="text-blue-500"
-                                href="https://twitter.com/search?q=%23Fartistic"
-                            >
-                                #Fartistic
-                            </a>
-                        </li>
-                        <li>
-                            R18:
-                            <a
-                                class="text-blue-500"
-                                href="https://twitter.com/search?q=%23Lewdprechaun"
-                            >
-                                #Lewdprechaun
-                            </a>
-                        </li>
-                        <li>
-                            AI:
-                            <a class="text-blue-500" href="https://twitter.com/search?q=%23FuyoAI">
-                                #FuyoAI
-                            </a>
-                        </li>
-                        <li>
-                            MEMES:
-                            <a class="text-blue-500" href="https://twitter.com/search?q=%23Fwahaha">
-                                #Fwahaha
-                            </a>
-                        </li>
-                    </ul>
+                    <div
+                        data-label="tags"
+                        class="border-2 border-solid border-gray-500 p-2 max-w-lg rounded"
+                    >
+                        <ul>
+                            <li>
+                                GENERAL:
+                                <a
+                                    class="text-blue-500"
+                                    href="https://twitter.com/search?q=%23FuyoCloverfield"
+                                >
+                                    #FuyoCloverfield
+                                </a>
+                            </li>
+                            <li>
+                                LIVE:
+                                <a
+                                    class="text-blue-500"
+                                    href="https://twitter.com/search?q=%23FuyOnline"
+                                >
+                                    #FuyOnline
+                                </a>
+                            </li>
+                            <li>
+                                CLIPS:
+                                <a
+                                    class="text-blue-500"
+                                    href="https://twitter.com/search?q=%23FuyoCloverClips"
+                                >
+                                    #FuyoCloverClips
+                                </a>
+                            </li>
+                            <li>
+                                ART:
+                                <a
+                                    class="text-blue-500"
+                                    href="https://twitter.com/search?q=%23Fartistic"
+                                >
+                                    #Fartistic
+                                </a>
+                            </li>
+                            <li>
+                                R18:
+                                <a
+                                    class="text-blue-500"
+                                    href="https://twitter.com/search?q=%23Lewdprechaun"
+                                >
+                                    #Lewdprechaun
+                                </a>
+                            </li>
+                            <li>
+                                AI:
+                                <a
+                                    class="text-blue-500"
+                                    href="https://twitter.com/search?q=%23FuyoAI"
+                                >
+                                    #FuyoAI
+                                </a>
+                            </li>
+                            <li>
+                                MEMES:
+                                <a
+                                    class="text-blue-500"
+                                    href="https://twitter.com/search?q=%23Fwahaha"
+                                >
+                                    #Fwahaha
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -376,6 +413,14 @@
                 sidebar.classList.toggle('hidden');
                 button.innerText = sidebar.classList.contains('hidden') ? '=' : '<';
             });
+            for (const collapser of document.querySelectorAll('button[data-target]')) {
+                const targetLabel = collapser.dataset.target;
+                const targetElem = document.querySelector(`[data-label="${targetLabel}"]`);
+                collapser.addEventListener('click', () => {
+                    targetElem.classList.toggle('hidden');
+                    collapser.innerText = targetElem.classList.contains('hidden') ? '[+]' : '[-]';
+                });
+            }
         </script>
     </body>
 </html>
